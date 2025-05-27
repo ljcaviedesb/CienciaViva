@@ -1,0 +1,161 @@
+/* style.css - Estilos para la web de Laura Caviedes */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f7fb;
+  color: #3d2854;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #E6E6FA;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8A2BE2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a, .language-selector {
+  text-decoration: none;
+  color: #3d2854;
+  font-weight: 500;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.language-selector {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('assets/logo_background.png');
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3d2854;
+  margin-bottom: 1.5rem;
+}
+
+.btn-scroll, .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #9370DB;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-scroll:hover, .btn:hover {
+  background-color: #8A2BE2;
+}
+
+/* Secciones generales */
+.section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: #FFDD94;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #FF69B4;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #FFC0CB;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #3d2854;
+}
+
+/* Footer */
+.footer {
+  background-color: #E6E6FA;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .social-links a {
+  text-decoration: none;
+  color: #9370DB;
+  font-weight: 600;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #555;
+}
