@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Digitales - Laura Caviedes</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">LC</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index2.html">Inicio</a></li>
+      <li><a href="index2.html#sobre-mi">Sobre mí</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="blog.html">Blog educativo</a></li>
+      <li><a href="ciencia-biblia.html">Ciencia y Biblia</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><select class="language-selector">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select></li>
+    </ul>
+  </nav> 
+
+  <header class="section">
+    <h1>Plantillas y productos digitales</h1>
+    <p class="subtitle">Herramientas que transforman tu organización, hábitos y aprendizaje.</p>
+  </header>
+
+  <section class="section product-list">
+    <div id="producto1" class="product-card disponible">
+      <img src="img/logo_plan_de_lectura.png" alt="Plantilla de lectura">
+      <h3>Plantilla de lectura</h3>
+      <p class="short">Planifica, registra y mejora tus hábitos de lectura.</p>
+      <div class="more-info">
+        <p>El Planeador de Lectura es una plantilla interactiva diseñada para ayudarte a organizar, visualizar y dar seguimiento a tus hábitos de lectura de forma clara y motivadora. Con un diseño atractivo y funcional, esta herramienta te permite:</p>
+        <ul>
+          <li>Registrar el libro que estás leyendo</li>
+          <li>Establecer una meta personalizada de días para completarlo</li>
+          <li>Generar automáticamente un plan de lectura diario</li>
+          <li>Marcar tu progreso con casillas de verificación</li>
+          <li>Visualizar tu avance en tiempo real mediante gráficos e imágenes</li>
+          <li>Llevar un historial tipo biblioteca visual con los libros que has leído</li>
+        </ul>
+        <p>Perfecto para lectores comprometidos, estudiantes, clubes de lectura o cualquier persona que quiera mantenerse motivada y enfocada en sus metas lectoras.</p>
+        <p>Además, todo está automatizado: solo completas tus datos y haces clic en un botón para que el plan se genere al instante. ¡Y cada nuevo libro se añade automáticamente a tu biblioteca interactiva!</p>
+        <p><strong>Importante:</strong> La plantilla es compatible con Google Sheets en computador y requiere otorgar permisos para activar sus funciones interactivas. No es compatible con dispositivos móviles.</p>
+      </div>
+      <span class="estado disponible">✅ Disponible en un solo click</span>
+      <a class="btn" href="https://pay.hotmart.com/R99534261D?bid=1748386248320">Comprar</a>
+      <a class="btn btn-toggle" onclick="toggleInfo('producto1')">Más info →</a>
+    </div>
+
+    <div id="producto2" class="product-card desarrollo">
+      <img src="assets/curso_habitos.png" alt="Curso de hábitos sostenibles">
+      <h3>Curso de hábitos sostenibles</h3>
+      <span class="estado desarrollo">🕒 En desarrollo</span>
+      <p>Lo podrás adquirir pronto.</p>
+      <a class="btn" href="#">Más info →</a>
+    </div>
+  </section>
+
+  <section class="section cta-final">
+    <h2>¿Tienes una idea o plantilla que te gustaría ver aquí?</h2>
+    <a class="btn" href="#">Sugiere un producto</a>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
