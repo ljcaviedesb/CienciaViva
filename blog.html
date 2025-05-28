@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Educativo - Laura Caviedes</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">LC</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index2.html">Inicio</a></li>
+      <li><a href="index2.html#sobre-mi">Sobre mí</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="blog.html">Blog educativo</a></li>
+      <li><a href="ciencia-biblia.html">Ciencia y Biblia</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><select class="language-selector">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select></li>
+    </ul>
+  </nav> 
+
+  <header class="section">
+    <h1>Blog de Física</h1>
+    <p class="subtitle">  </p>
+  </header>
+
+  <section class="section">
+    <p>En este espacio compartiré contenidos de divulgación científica así como explicaciones de conceptos interesantes.<br>
+    Estamos trabajando en el contenido. ¡Pronto encontrarás artículos fascinantes aquí!</p>
+  </section>
+
+  <section class="section blog-layout">
+    <aside class="sidebar">
+      <h3>Temas</h3>
+      <ul>
+        <li>▸ Física</li>
+        <li>▸ Física de partículas</li>
+        <li>▸ Programación</li>
+      </ul>
+    </aside>
+    <main class="blog-content">
+      <p>🔧 Esta sección está en construcción</p>
+      <ul>
+        <li>Blog en preparación</li>
+        <li>¡Pronto más contenido!</li>
+      </ul>
+      <p>📘 Publicaciones futuras:</p>
+      <ul>
+        <li>¿Qué son las partículas elementales?</li>
+      </ul>
+    </main>
+  </section>
+
+  <section class="section cta-final">
+    <h2>¿Tienes un tema que te gustaría que aborde?</h2>
+<div id="contacto-formulario" class="contacto-form">
+        <form>
+            <input type="text" placeholder="🧍 Nombre completo" required><br><br>
+            <input type="text" placeholder="✏️ Asunto" required><br><br>
+            <textarea rows="5" placeholder="📨 Tu mensaje" required></textarea><br><br>
+            <button type="submit" class="btn">📤 Enviar mensaje</button>
+        </form>
+    <p style="margin-top: 1rem; font-style: italic; display: none;" id="mensaje-confirmacion">
+      ¡Gracias por escribirme! Te responderé pronto con todo el gusto.
+    </p>
+    </div>
+    <a class="btn btn-toggle" onclick="toggleInfo('contacto-formulario')">Escríbeme →</a>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
