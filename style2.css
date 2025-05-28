@@ -87,6 +87,8 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s ease;
   margin-top: 1rem;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-scroll:hover, .btn:hover {
@@ -119,11 +121,13 @@ h1 {
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
+
 
 .card {
   background-color: #FFC0CB;
@@ -228,7 +232,7 @@ h1 {
 
 /* Filtros */
 .filter-bar {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -359,6 +363,53 @@ h1 {
   background-color: #FF1493;
 }
 
+/* Projects */
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #8A2BE2;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Colores suaves por seccion de projects*/
+#fisica {
+  background-color: #f3e8ff;
+}
+
+#simulaciones {
+  background-color: #e7f4fa;
+}
+
+#aplicada {
+  background-color: #fff3e6;
+}
+
+.cta-final h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Short window */
 @media screen and (max-width: 768px) {
   /* Desplegar el menu */
   .menu-toggle {
@@ -406,5 +457,15 @@ h1 {
   .product-list {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
   }
 }
