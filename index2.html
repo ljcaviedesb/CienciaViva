@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laura Caviedes</title>
-  <link rel="stylesheet" href="style2.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">LC</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index2.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
       <li><a href="proyectos.html">Proyectos</a></li>
       <li><a href="productos.html">Productos</a></li>
       <li><a href="blog.html">Blog educativo</a></li>
@@ -23,7 +23,7 @@
         <option value="en">EN</option>
       </select></li>
     </ul>
-  </nav>
+  </nav> 
 
   <header id="hero" class="hero">
     <div class="hero-content">
@@ -35,7 +35,7 @@
   <section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
     <p>Apasionada por entender cómo funciona el universo y cómo ese conocimiento puede iluminar la vida cotidiana. Conecta ciencia, fe y educación para formar, guiar y transformar.</p>
-    <a href="sobre-mi.html" class="btn">Ver más</a>
+    <!--<a href="sobre-mi.html" class="btn">Ver más</a> -->
   </section>
 
   <section id="proyectos" class="section">
@@ -75,6 +75,19 @@
     <p>¿Tienes una idea, proyecto o colaboración? ¡Hablemos!</p>
     <a href="contacto.html" class="btn">Ir al formulario</a>
   </section>
+  <section id="contacto-formulario" class="section contacto-form">
+    <h2>¿Hablamos?</h2>
+    <p class="subtitle">¿Tienes una idea, proyecto, colaboración o solicitud? ¡Hablemos!</p>
+    <form>
+      <input type="text" placeholder="🧍 Nombre completo" required><br><br>
+      <input type="text" placeholder="✏️ Asunto" required><br><br>
+      <textarea rows="5" placeholder="📨 Tu mensaje" required></textarea><br><br>
+      <button type="submit" class="btn">📤 Enviar mensaje</button>
+    </form>
+    <p style="margin-top: 1rem; font-style: italic; display: none;" id="mensaje-confirmacion">
+      ¡Gracias por escribirme! Te responderé pronto con todo el gusto.
+    </p>
+  </section>
 
   <footer class="footer">
     <div class="social-links">
@@ -84,5 +97,6 @@
     </div>
     <div class="footer-note">© 2025 Laura Caviedes · Todos los derechos reservados</div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
