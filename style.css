@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f7fb;
+  color: #3d2854;
+}
+
+.hero {
+  background-image: url('assets/logo_background.png'); /* tu fondo de colisión */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-scroll {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #9370DB;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-scroll:hover {
+  background-color: #8A2BE2;
+}
+
+.sobre-mi {
+  padding: 4rem 2rem;
+  background-color: #E6E6FA;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
