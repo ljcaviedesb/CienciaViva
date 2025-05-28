@@ -70,23 +70,21 @@
     <a href="ciencia-biblia.html" class="btn">Explorar</a>
   </section>
 
-  <section id="contacto" class="section">
+  <section id="contacto" class="section ">
     <h2>Contacto</h2>
-    <p>¿Tienes una idea, proyecto o colaboración? ¡Hablemos!</p>
-    <a href="contacto.html" class="btn">Ir al formulario</a>
-  </section>
-  <section id="contacto-formulario" class="section contacto-form">
-    <h2>¿Hablamos?</h2>
-    <p class="subtitle">¿Tienes una idea, proyecto, colaboración o solicitud? ¡Hablemos!</p>
-    <form>
-      <input type="text" placeholder="🧍 Nombre completo" required><br><br>
-      <input type="text" placeholder="✏️ Asunto" required><br><br>
-      <textarea rows="5" placeholder="📨 Tu mensaje" required></textarea><br><br>
-      <button type="submit" class="btn">📤 Enviar mensaje</button>
-    </form>
+    <p class="subtitle">¿Tienes una idea, proyecto o colaboración? ¡Hablemos!</p>
+    <div id="contacto-formulario" class="contacto-form">
+        <form>
+            <input type="text" placeholder="🧍 Nombre completo" required><br><br>
+            <input type="text" placeholder="✏️ Asunto" required><br><br>
+            <textarea rows="5" placeholder="📨 Tu mensaje" required></textarea><br><br>
+            <button type="submit" class="btn">📤 Enviar mensaje</button>
+        </form>
     <p style="margin-top: 1rem; font-style: italic; display: none;" id="mensaje-confirmacion">
       ¡Gracias por escribirme! Te responderé pronto con todo el gusto.
     </p>
+    </div>
+    <a class="btn btn-toggle" onclick="toggleInfo('contacto-formulario')">Ir al formulario</a>
   </section>
 
   <footer class="footer">

@@ -314,11 +314,49 @@ h1 {
   color: #3d2854;
 }
 
-@media screen and (max-width: 768px) {
-  .product-list {
-    flex-direction: column;
-    align-items: center;
-  }
+/* CONTACTO */
+.contacto-form {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.contacto-form.expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.contacto-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contacto-form button {
+  background-color: #FF69B4;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #FF1493;
 }
 
 @media screen and (max-width: 768px) {
@@ -364,4 +402,9 @@ h1 {
 
 }
 
-
+@media screen and (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
