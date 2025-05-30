@@ -1,10 +1,37 @@
 /* style.css - Estilos para la web de Laura Caviedes */
+:root {
+  --primario: ;
+  --secundario: ;
+
+  --Fondo: #fff; /*Blanco*/
+  --Fondo_grisaseo: #f9f7fb; /*Blanco grisaseo*/
+  --Fondo_Tarjetas: #FFC0CB;
+  --Bordes: #ddd;
+  --Barras: #E6E6FA; /*Púrpura claro - barras de navegador*/
+  --tipoSeccion_fondo1: rgba(255, 255, 255, 0.85) ; /*Blanco transparente 85%*/
+  --tipoSeccion_fondo2: #FFDD94;
+  --tipoSeccion_fondo3: #f3e8ff;
+  --tipoSeccion_fondo4: #e7f4fa;
+  --tipoSeccion_fondo5: #fff3e6;
+  --botones: #9370DB; /*Morado*/
+  --botones_hover: #8A2BE2; /*Morado vívido*/
+  --botones_rosado: #FF69B4;
+  --botones_rodado_hover: #FF1493;
+  --disponible: green;
+  --noDisponible: #FF4500;
+  /* Color de letras */
+  --blanco: white;
+  --oscuro: #3d2854;
+  --titulo: #FF69B4;
+  --subtitulo: #555;
+
+}
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f7fb;
-  color: #3d2854;
+  background-color: var(--Fondo);
+  color: var(--oscuro);
   scroll-behavior: smooth;
 }
 
@@ -14,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #E6E6FA;
+  background-color: var(--Barras);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,7 +51,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #8A2BE2;
+  color: var(--botones);
 }
 
 .nav-links {
@@ -37,7 +64,7 @@ body {
 
 .nav-links li a, .language-selector {
   text-decoration: none;
-  color: #3d2854;
+  color: var(--oscuro);
   font-weight: 500;
   background: none;
   border: none;
@@ -64,7 +91,7 @@ body {
 }
 
 .hero-content {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: var(--tipoSeccion_fondo1);
   border-radius: 1rem;
   padding: 2rem;
   max-width: 800px;
@@ -73,15 +100,15 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #3d2854;
+  color: var(--oscuro);
   margin-bottom: 1.5rem;
 }
 
 .btn-scroll, .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #9370DB;
-  color: white;
+  background-color: var(--botones);
+  color: var(--blanco);
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
@@ -92,23 +119,23 @@ h1 {
 }
 
 .btn-scroll:hover, .btn:hover {
-  background-color: #8A2BE2;
+  background-color: var(--botones_hover);
 }
 
 /* Secciones generales */
 .section {
   padding: 2rem 2rem;
-  background-color: #fff;
+  background-color: var(--Fondo);
   text-align: center;
 }
 
 .section:nth-child(odd) {
-  background-color: #FFDD94;
+  background-color: var(--tipoSeccion_fondo2);
 }
 
 .section h2 {
   font-size: 2rem;
-  color: #FF69B4;
+  color: var(--titulo);
   margin-bottom: 1rem;
 }
 
@@ -130,18 +157,18 @@ h1 {
 
 
 .card {
-  background-color: #FFC0CB;
+  background-color: var(--Fondo_Tarjetas);
   padding: 1.5rem;
   border-radius: 1rem;
   width: 200px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   font-weight: bold;
-  color: #3d2854;
+  color: var(--oscuro);
 }
 
 /* Footer */
 .footer {
-  background-color: #E6E6FA;
+  background-color: var(--Barras);
   text-align: center;
   padding: 2rem;
 }
@@ -155,20 +182,20 @@ h1 {
 
 .footer .social-links a {
   text-decoration: none;
-  color: #9370DB;
+  color: var(--botones);
   font-weight: 600;
 }
 
 .footer-note {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--subtitulo);
 }
 
 /* Productos */
 /* style.css - Estilos para productos digitales */
 .subtitle {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--subtitulo);
   margin-top: -1rem;
   margin-bottom: 2rem;
 }
@@ -181,7 +208,7 @@ h1 {
 }
 
 .product-card {
-  background: #fff;
+  background: var(--Fondo);
   border-radius: 1rem;
   padding: 1.5rem;
   width: 300px;
@@ -208,7 +235,7 @@ h1 {
 
 .product-card h3 {
   margin: 0.5rem 0;
-  color: #8A2BE2;
+  color: var(--botones_hover);
 }
 
 .product-card p, .product-card ul {
@@ -223,11 +250,11 @@ h1 {
 }
 
 .estado.disponible {
-  color: green;
+  color: var(--disponible);
 }
 
 .estado.desarrollo {
-  color: #FF4500;
+  color: var(--noDisponible);
 }
 
 /* Filtros */
@@ -266,7 +293,7 @@ h1 {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: var(--Fondo);
   padding: 2rem;
   border-radius: 1rem;
   width: 90%;
@@ -315,7 +342,7 @@ h1 {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #3d2854;
+  color: var(--oscuro);
 }
 
 /* CONTACTO */
@@ -349,9 +376,9 @@ h1 {
 }
 
 .contacto-form button {
-  background-color: #FF69B4;
+  background-color: var(--botones_rosado);
   border: none;
-  color: white;
+  color: var(--blanco);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-weight: bold;
@@ -360,13 +387,13 @@ h1 {
 }
 
 .contacto-form button:hover {
-  background-color: #FF1493;
+  background-color: var(--botones_rodado_hover);
 }
 
 /* Projects */
 .project-card {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: var(--blanco);
+  border: 1px solid var(--Bordes);
   border-radius: 1rem;
   padding: 2rem;
   width: 300px;
@@ -380,28 +407,28 @@ h1 {
 }
 
 .project-card h3 {
-  color: #8A2BE2;
+  color: var(--botones_hover);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #555;
+  color: var(--Bordes);
   margin-bottom: 1rem;
 }
 
 /* Colores suaves por seccion de projects*/
 #fisica {
-  background-color: #f3e8ff;
+  background-color: var(--tipoSeccion_fondo3);
 }
 
 #simulaciones {
-  background-color: #e7f4fa;
+  background-color: var(--tipoSeccion_fondo4);
 }
 
 #aplicada {
-  background-color: #fff3e6;
+  background-color: var(--tipoSeccion_fondo5);
 }
 
 .cta-final h2 {
@@ -424,7 +451,7 @@ h1 {
 .sidebar {
   flex: 1;
   max-width: 250px;
-  background-color: #E6E6FA;
+  background-color: var(--Barras);
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -433,7 +460,7 @@ h1 {
 .sidebar h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #8A2BE2;
+  color: var(--botones_hover);
 }
 
 .sidebar ul {
@@ -450,7 +477,7 @@ h1 {
 
 .blog-content {
   flex: 3;
-  background-color: white;
+  background-color: var(--blanco);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -480,7 +507,7 @@ h1 {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #E6E6FA;
+    background-color: var(--Barras);
     position: absolute;
     top: 60px;
     right: 0;
@@ -500,8 +527,8 @@ h1 {
   }
 
   .nav-links li a:hover {
-    background-color: #8A2BE2;
-    color: white; /* si quieres que el texto también cambie */
+    background-color: var(--botones_hover);
+    color: var(--blanco); /* si quieres que el texto también cambie */
     border-radius: 8px;
     padding: 0.3rem 0rem;
     transition: background-color 0.3s ease;
