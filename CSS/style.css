@@ -122,6 +122,17 @@ h1 {
   background-color: var(--botones_hover);
 }
 
+.btn-card {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
 /* Secciones generales */
 .section {
   padding: 2rem 2rem;
@@ -407,14 +418,14 @@ h1 {
 }
 
 .project-card h3 {
-  color: var(--botones_hover);
+  color: var(--titulo);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: var(--Bordes);
+  color: var(--subtitulo);
   margin-bottom: 1rem;
 }
 
@@ -498,7 +509,7 @@ h1 {
 }
 
 /* Short window */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   /* Desplegar el menu */
   .menu-toggle {
     display: block;

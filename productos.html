@@ -19,7 +19,7 @@
       <li><a href="productos.html">Productos</a></li>
       <li><a href="blog.html">Blog educativo</a></li>
       <li><a href="ciencia-biblia.html">Ciencia y Biblia</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
       <li><select class="language-selector">
         <option value="es">ES</option>
         <option value="en">EN</option>
@@ -68,10 +68,13 @@
   <section class="section cta-final">
     <h2>¿Tienes una idea o plantilla que te gustaría ver aquí?</h2>
     <div id="contacto-formulario" class="contacto-form">
-        <form>
-            <input type="text" placeholder="🧍 Nombre completo" required><br><br>
-            <input type="text" placeholder="✏️ Asunto" required><br><br>
-            <textarea rows="5" placeholder="📨 Tu mensaje" required></textarea><br><br>
+        <form action="https://formsubmit.co/d5dab503716d2cd30fc6837142234101" method="POST">
+            <input type="text" name="nombre" placeholder="🧍 Nombre completo" required><br><br>
+            <input type="text" name="asunto" placeholder="✏️ Asunto" required><br><br>
+            <input type="text" name="mail" placeholder="✉️ E-mail" required><br><br>
+            <textarea rows="5" name="message" placeholder="📨 Tu mensaje" required></textarea><br><br>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
             <button type="submit" class="btn">📤 Enviar mensaje</button>
         </form>
     <p style="margin-top: 1rem; font-style: italic; display: none;" id="mensaje-confirmacion">
