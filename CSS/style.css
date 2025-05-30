@@ -5,24 +5,24 @@
 
   --Fondo: #fff; /*Blanco*/
   --Fondo_grisaseo: #f9f7fb; /*Blanco grisaseo*/
-  --Fondo_Tarjetas: #FFC0CB;
+  --Fondo_Tarjetas: #f1e8f6;
   --Bordes: #ddd;
   --Barras: #E6E6FA; /*Púrpura claro - barras de navegador*/
   --tipoSeccion_fondo1: rgba(255, 255, 255, 0.85) ; /*Blanco transparente 85%*/
-  --tipoSeccion_fondo2: #FFDD94;
+  --tipoSeccion_fondo2: #E9F1FA;
   --tipoSeccion_fondo3: #f3e8ff;
   --tipoSeccion_fondo4: #e7f4fa;
   --tipoSeccion_fondo5: #fff3e6;
-  --botones: #9370DB; /*Morado*/
-  --botones_hover: #8A2BE2; /*Morado vívido*/
-  --botones_rosado: #FF69B4;
-  --botones_rodado_hover: #FF1493;
+  --botones: #FF69B4; /*Morado*/
+  --botones_hover: #FF1493; /*Morado vívido*/
+  --botones_rosado: #9370DB;
+  --botones_rodado_hover: #8A2BE2;
   --disponible: green;
   --noDisponible: #FF4500;
   /* Color de letras */
   --blanco: white;
   --oscuro: #3d2854;
-  --titulo: #FF69B4;
+  --titulo: #7a627a;
   --subtitulo: #555;
 
 }
