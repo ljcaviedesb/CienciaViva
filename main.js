@@ -23,3 +23,18 @@ function toggleInfo(id) {
       button.textContent = 'Más info →';
     }
 }
+
+/* Add repetitive code */
+fetch("navbar.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  }
+);
+
+fetch("formulario.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("formulario").innerHTML = data;
+  }
+);
