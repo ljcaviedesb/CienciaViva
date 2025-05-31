@@ -1,9 +1,16 @@
 <form action="https://formsubmit.co/d5dab503716d2cd30fc6837142234101" method="POST">
-            <input type="text" name="nombre" placeholder="🧍 Nombre completo" required><br><br>
-            <input type="text" name="asunto" placeholder="✏️ Asunto" required><br><br>
-            <input type="text" name="mail" placeholder="✉️ E-mail" required><br><br>
-            <textarea rows="5" name="message" placeholder="📨 Tu mensaje" required></textarea><br><br>
-            <input type="hidden" name="_next" value="https://ljcaviedesb.github.io/Neeman-LC/">
-            <input type="hidden" name="_captcha" value="false">
-            <button type="submit" class="btn">📤 Enviar mensaje</button>
-        </form>
+    <input type="text" name="nombre" placeholder="🧍 Nombre completo" required><br><br>
+    <input type="text" name="asunto" placeholder="✏️ Asunto" required><br><br>
+    <input type="text" name="mail" placeholder="✉️ E-mail" required><br><br>
+    <textarea rows="5" name="message" placeholder="📨 Tu mensaje" required></textarea><br><br>
+    <input type="hidden" name="_next" value="https://ljcaviedesb.github.io/Neeman-LC/">
+    <input type="hidden" name="_captcha" value="false">
+    <div id="politica_privacidad"></div>
+    <div class="checkbox-politica">
+        <input type="checkbox" id="acepto" required>
+        <label for="acepto">
+            Acepto la <a href="politica_privacidad.html" onclick="openModal(); return false;">Política de Tratamiento de Datos</a>
+        </label>
+    </div>
+    <button type="submit" class="btn">📤 Enviar mensaje</button>
+</form>

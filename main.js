@@ -38,3 +38,28 @@ fetch("formulario.html")
     document.getElementById("formulario").innerHTML = data;
   }
 );
+
+// Cargar el contenido del modal
+fetch("politica_privacidad.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("politica_privacidad").innerHTML = data;
+
+    // Asegurar que las funciones se cargan DESPUÉS de insertar el HTML del modal
+    window.openModal = function () {
+      const modal = document.getElementById("modal-politica");
+      if (modal) modal.style.display = "block";
+    }
+
+    window.closeModal = function () {
+      const modal = document.getElementById("modal-politica");
+      if (modal) modal.style.display = "none";
+    }
+
+    window.addEventListener("click", function (event) {
+      const modal = document.getElementById("modal-politica");
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  });
