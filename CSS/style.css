@@ -1,8 +1,5 @@
 /* style.css - Estilos para la web de Laura Caviedes */
 :root {
-  --primario: ;
-  --secundario: ;
-
   --Fondo: #fff; /*Blanco*/
   --Fondo_grisaseo: #f8f7fb; /*Blanco grisaseo*/
   --Fondo_Tarjetas: #E6E6FA;
@@ -33,6 +30,63 @@ body {
   background-color: var(--Fondo);
   color: var(--oscuro);
   scroll-behavior: smooth;
+}
+
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--Fondo_grisaseo);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--subtitulo);
+  margin-bottom: 2rem;
+}
+
+.featured-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: var(--botones_secundarios);
+  margin-top: 2rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--botones_secundarios);
+  padding-left: 1rem;
+  font-style: italic;
+  background: var(--tipoSeccion_fondo4);
+  margin: 1rem 0;
+}
+
+.cta {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: var(--tipoSeccion_fondo5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta button {
+  background-color: var(--botones);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: var(--botones_hover);
 }
 
 /* Navbar */
@@ -237,7 +291,7 @@ h1 {
 
 .product-card.expanded {
   max-height: 1500px;
-  width: 500px;
+  width: 80%;
   transition: max-height 0.6s ease;
 }
 
@@ -349,10 +403,12 @@ h1 {
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .product-card.expanded .more-info {
-  max-height: 1000px;
+  max-height: 80%;
   opacity: 1;
   margin-top: 1rem;
 }
