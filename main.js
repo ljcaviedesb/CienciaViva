@@ -63,3 +63,13 @@ fetch("politica_privacidad.html")
       }
     });
   });
+
+// Cargar artículo por defecto al abrir la página
+fetch('Articles-blog/articulo1.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('blog-article-container').innerHTML = data;
+  })
+  .catch(() => {
+    document.getElementById('blog-article-container').innerHTML = '<p>Error al cargar el artículo.</p>';
+  });
