@@ -124,12 +124,16 @@ h1 {
 
 .btn-card {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 2% 5%;
+  background-color: var(--botones);
+  color: var(--blanco);
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  color: Var(--oscuro);
   transition: background-color 0.3s ease;
   margin-top: 1rem;
+  margin-left: 3%;
+  margin-bottom: 3%;
   cursor: pointer;
   border: none;
 }
@@ -407,7 +411,7 @@ h1 {
   background-color: var(--blanco);
   border: 1px solid var(--Bordes);
   border-radius: 1rem;
-  padding: 2rem;
+  
   width: 80%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -423,12 +427,14 @@ h1 {
   color: var(--titulo);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  margin-left: 3%;
 }
 
 .project-card p {
   font-size: 1rem;
   color: var(--subtitulo);
   margin-bottom: 1rem;
+  margin-left: 3%;
 }
 
 /* Colores suaves por seccion de projects*/
