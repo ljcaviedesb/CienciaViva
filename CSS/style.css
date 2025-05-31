@@ -4,25 +4,25 @@
   --secundario: ;
 
   --Fondo: #fff; /*Blanco*/
-  --Fondo_grisaseo: #f9f7fb; /*Blanco grisaseo*/
-  --Fondo_Tarjetas: #f1e8f6;
+  --Fondo_grisaseo: #f8f7fb; /*Blanco grisaseo*/
+  --Fondo_Tarjetas: #E6E6FA;
   --Bordes: #ddd;
   --Barras: #E6E6FA; /*Púrpura claro - barras de navegador*/
   --tipoSeccion_fondo1: rgba(255, 255, 255, 0.85) ; /*Blanco transparente 85%*/
   --tipoSeccion_fondo2: #E9F1FA;
-  --tipoSeccion_fondo3: #f3e8ff;
+  --tipoSeccion_fondo3: #ece8ff;
   --tipoSeccion_fondo4: #e7f4fa;
   --tipoSeccion_fondo5: #fff3e6;
-  --botones: #FF69B4; /*Morado*/
-  --botones_hover: #FF1493; /*Morado vívido*/
-  --botones_rosado: #9370DB;
-  --botones_rodado_hover: #8A2BE2;
+  --botones: #4796d6; 
+  --botones_hover: #3662a1; 
+  --botones_secundarios: #9370DB; /*Morado*/
+  --botones_secundarios_hover: #8A2BE2; /*Morado vívido*/
   --disponible: green;
   --noDisponible: #FF4500;
   /* Color de letras */
   --blanco: white;
-  --oscuro: #3d2854;
-  --titulo: #7a627a;
+  --oscuro: #283754;
+  --titulo: #3c68a7;
   --subtitulo: #555;
 
 }
@@ -51,7 +51,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--botones);
+  color: var(--botones_hover);
 }
 
 .nav-links {
@@ -388,7 +388,7 @@ h1 {
 }
 
 .contacto-form button {
-  background-color: var(--botones_rosado);
+  background-color: var(--botones_secundarios);
   border: none;
   color: var(--blanco);
   padding: 0.75rem 1.5rem;
@@ -399,7 +399,7 @@ h1 {
 }
 
 .contacto-form button:hover {
-  background-color: var(--botones_rodado_hover);
+  background-color: var(--botones_secundarios_hover);
 }
 
 /* Projects */
@@ -408,10 +408,11 @@ h1 {
   border: 1px solid var(--Bordes);
   border-radius: 1rem;
   padding: 2rem;
-  width: 300px;
+  width: 80%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   text-align: left;
+  justify-self: center;
 }
 
 .project-card:hover {
@@ -464,7 +465,7 @@ h1 {
   flex: 1;
   max-width: 250px;
   background-color: var(--Barras);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -571,10 +572,21 @@ h1 {
 }
 
 .blog-layout {
-    flex-direction: column;
-    padding: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar, .blog-content {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 
-  .sidebar, .blog-content {
-    max-width: 100%;
+  .sidebar {
+    order: -1; /* Hace que el sidebar quede antes que el contenido */
   }
+}
