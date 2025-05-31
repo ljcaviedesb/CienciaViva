@@ -127,6 +127,7 @@ h1 {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  color: Var(--oscuro);
   transition: background-color 0.3s ease;
   margin-top: 1rem;
   cursor: pointer;
