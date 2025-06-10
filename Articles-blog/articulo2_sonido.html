@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artículo - Blog de Laura Caviedes</title>
+  <link rel="stylesheet" href="../CSS/style.css" /> 
+  
+</head>
+<body>
+  <div id="navbar"></div> 
+
+  <header class="section">
+    <h1>Blog de Física</h1>
+    <p class="subtitle">  </p>
+  </header>
+
+  <section class="section">
+    <p>En este espacio compartiré contenidos de divulgación científica así como explicaciones de conceptos interesantes.<br>
+    Estamos trabajando en el contenido. ¡Pronto encontrarás artículos fascinantes aquí!</p>
+  </section>
+
+  <section class="section blog-layout">
+    <aside class="sidebar">
+      <h3>Temas</h3>
+      <ul>
+        <li><a href="articulo2_sonido.html">▸ El sonido</a></li>
+        <li>▸ Física de partículas</li>
+        <li>▸ Programación</li>
+      </ul>
+    </aside>
+  <article>
+    <h1>¿Por qué tu voz suena distinta a la de los demás?</h1>
+    <p class="subtitle">Lo que oyes de ti mismo es una ilusión auditiva. Descubre qué hay detrás del timbre, las notas y tus armónicos.</p>
+    <div class="meta">🎤 Publicado por Laura Caviedes | Física y sonido | Lectura: 6–8 min
+    </div>
+
+    <h2>🔊 ¿Qué es el timbre de la voz?</h2>
+    <p>
+      El <strong>timbre</strong> es la "huella sonora" de cada voz. Aunque dos personas canten la misma nota, suenan diferente por factores como:
+    </p>
+    <ul>
+      <li>Forma y tensión de las <strong>cuerdas vocales</strong></li>
+      <li><strong>Cavidades resonantes</strong>: garganta, boca, nariz y pecho</li>
+      <li>Forma de articular: labios, lengua, mandíbula</li>
+      <li>Y sobre todo: los <strong>armónicos</strong></li>
+    </ul>
+    <blockquote>
+      🎤 Dato curioso: Las "cuerdas vocales" no son cuerdas... ¡sino pliegues musculares que vibran como labios cerrados!
+    </blockquote>
+
+    <h3>🎭 ¿Se puede cambiar el timbre?</h3>
+    <p>Sí, mediante:</p>
+    <ul>
+      <li><strong>Entrenamiento vocal</strong> y técnicas de colocación</li>
+      <li><strong>Terapia del habla</strong> y ejercicios de resonancia</li>
+      <li><strong>Procesamiento digital</strong> o <em>voice changers</em></li>
+      <li>Modelos de <strong>IA</strong> que clonan voces</li>
+    </ul>
+
+    <h2>🎼 Frecuencias de notas musicales</h2>
+    <p>
+      En el sistema temperado, la nota <strong>La4 = 440 Hz</strong>. Las siguientes son las frecuencias en la octava central:
+    </p>
+    <table>
+      <thead><tr><th>Nota</th><th>Nombre</th><th>Frecuencia (Hz)</th></tr></thead>
+      <tbody>
+        <tr><td>Do</td><td>C4</td><td>261.63</td></tr>
+        <tr><td>Re</td><td>D4</td><td>293.66</td></tr>
+        <tr><td>Mi</td><td>E4</td><td>329.63</td></tr>
+        <tr><td>Fa</td><td>F4</td><td>349.23</td></tr>
+        <tr><td>Sol</td><td>G4</td><td>392.00</td></tr>
+        <tr><td>La</td><td>A4</td><td>440.00</td></tr>
+        <tr><td>Si</td><td>B4</td><td>493.88</td></tr>
+        <tr><td>Do</td><td>C5</td><td>523.25</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🎵 Tonalidades y octavas</h2>
+    <p>Subir o bajar una tonalidad significa mover toda la escala hacia arriba o abajo. Por ejemplo:</p>
+    <ul>
+      <li><strong>Do mayor → Re mayor</strong>: sube una tonalidad</li>
+      <li><strong>Do mayor → Sib mayor</strong>: baja un tono y medio</li>
+    </ul>
+
+    <h2>🌿 Cómo se calculan las frecuencias</h2>
+    <p>
+      Para cualquier nota:
+      <code>f(n) = 440 × 2^((n - 49)/12)</code>
+    </p>
+    <p>
+      Donde <code>n</code> es el número de la nota, siendo <strong>La4 = 49</strong>. Por ejemplo, <strong>Do4 = 40</strong>, y da aproximadamente 261.63 Hz.
+    </p>
+
+    <h2>🔹 Armónicos y su relación con las notas</h2>
+    <p>
+      Una nota incluye armónicos, que son múltiplos de su frecuencia. Por ejemplo, al cantar <strong>Mi4</strong>, también suenan:
+    </p>
+    <ul>
+      <li>Mi (659.26 Hz) - 2º armónico</li>
+      <li>Si (988.89 Hz) - 3º armónico</li>
+      <li>Sol♯ (1648.15 Hz) - 5º armónico</li>
+    </ul>
+
+    <blockquote>
+      🚀 Cada instrumento o voz tiene una combinación única de armónicos. Eso define su timbre.
+    </blockquote>
+
+    <h2>🎶 Tabla de armónicos (ejemplo en Do)</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Proporción</th><th>Nota</th><th>Intervalo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>1:1</td><td>Do</td><td>Fundamental</td></tr>
+        <tr><td>2</td><td>2:1</td><td>Do</td><td>Octava</td></tr>
+        <tr><td>3</td><td>3:1</td><td>Sol</td><td>Quinta</td></tr>
+        <tr><td>4</td><td>4:1</td><td>Do</td><td>Doble octava</td></tr>
+        <tr><td>5</td><td>5:1</td><td>Mi</td><td>Tercera mayor</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🧠 ¿Por qué no los percibimos por separado?</h2>
+    <p>
+      Porque el oído los integra en una sola percepción. Un <strong>análisis espectral</strong> muestra todas las frecuencias presentes.
+    </p>
+    <blockquote>
+      🎶 Cuando cantas "Mi", suenan muchos otros sonidos a la vez. Eso hace que tu voz sea única.
+    </blockquote>
+  </article>
+
+</body>
+</html>
