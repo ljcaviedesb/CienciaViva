@@ -39,37 +39,42 @@ fetch("formulario.html")
   }
 );
 
-// Cargar el contenido del modal
-fetch("politica_privacidad.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("politica_privacidad").innerHTML = data;
+document.addEventListener('DOMContentLoaded', () => {
+  // Cargar el contenido del modal
+  fetch("politica_privacidad.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("politica_privacidad").innerHTML = data;
 
-    // Asegurar que las funciones se cargan DESPUÉS de insertar el HTML del modal
-    window.openModal = function () {
-      const modal = document.getElementById("politica_privacidad");
-      if (modal) modal.style.display = "block";
+      // Asegurar que las funciones se cargan DESPUÉS de insertar el HTML del modal
+      window.openModal = function () {
+        const modal = document.getElementById("politica_privacidad");
+        if (modal) modal.style.display = "block";
+      }
+
+      window.closeModal = function () {
+        const modal = document.getElementById("politica_privacidad");
+        if (modal) modal.style.display = "none";
+      }
+
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("politica_privacidad");
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
     }
-
-    window.closeModal = function () {
-      const modal = document.getElementById("politica_privacidad");
-      if (modal) modal.style.display = "none";
-    }
-
-    window.addEventListener("click", function (event) {
-      const modal = document.getElementById("politica_privacidad");
-      if (event.target === modal) {
-        closeModal();
+  );  
+  // Cargar artículo por defecto al abrir la página
+  fetch('Articles-blog/articulo1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('blog-article-container').innerHTML = data;
+    })
+    .catch(() => {
+      const container = document.getElementById('blog-article-container');
+      if (container) {
+        container.innerHTML = '<p>Error al cargar el artículo.</p>';
       }
     });
-  });
-
-// Cargar artículo por defecto al abrir la página
-fetch('Articles-blog/articulo1.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('blog-article-container').innerHTML = data;
-  })
-  .catch(() => {
-    document.getElementById('blog-article-container').innerHTML = '<p>Error al cargar el artículo.</p>';
-  });
+});
