@@ -47,17 +47,17 @@ fetch("politica_privacidad.html")
 
     // Asegurar que las funciones se cargan DESPUÉS de insertar el HTML del modal
     window.openModal = function () {
-      const modal = document.getElementById("modal-politica");
+      const modal = document.getElementById("politica_privacidad");
       if (modal) modal.style.display = "block";
     }
 
     window.closeModal = function () {
-      const modal = document.getElementById("modal-politica");
+      const modal = document.getElementById("politica_privacidad");
       if (modal) modal.style.display = "none";
     }
 
     window.addEventListener("click", function (event) {
-      const modal = document.getElementById("modal-politica");
+      const modal = document.getElementById("politica_privacidad");
       if (event.target === modal) {
         closeModal();
       }
