@@ -70,6 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(response => response.text())
     .then(data => {
       document.getElementById('blog-article-container').innerHTML = data;
+      if (window.MathJax) {
+        MathJax.typesetPromise(); // Reprocesa las fórmulas después de insertar el HTML
+      }
     })
     .catch(() => {
       const container = document.getElementById('blog-article-container');
