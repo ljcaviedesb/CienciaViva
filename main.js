@@ -80,4 +80,28 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = '<p>Error al cargar el artículo.</p>';
       }
     });
+
+  const links = document.querySelectorAll('.nav-links-blog a');
+
+  links.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const url = link.getAttribute('data-articulo');
+
+      if (url) {
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('blog-article-container').innerHTML = data;
+            if (window.MathJax) {
+              MathJax.typesetPromise();
+            }
+          })
+          .catch(() => {
+            document.getElementById('blog-article-container').innerHTML =
+              '<p>Error al cargar el artículo seleccionado.</p>';
+          });
+      }
+    });
+  });
 });

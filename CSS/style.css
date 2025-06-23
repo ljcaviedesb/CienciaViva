@@ -125,6 +125,15 @@ blockquote {
   font-size: 1rem;
 }
 
+.nav-links-blog li a {
+  text-decoration: none;
+  color: var(--oscuro);
+  font-weight: 500;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
 .language-selector {
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
