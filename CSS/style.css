@@ -816,3 +816,34 @@ h1 {
   width: 60%;
   margin: 0 20%;
 }
+
+.tabla-grande th,
+.tabla-grande td {
+    padding: 0.1% 20px; /* Aumenta el padding para más espacio */
+    white-space: normal; /* Asegura que el texto se ajuste a la celda */
+    line-height: 1.5; /* Aumenta el interlineado para mejor legibilidad */
+}
+
+.tabla-grande th:last-child,
+.tabla-grande td:last-child {
+    min-width: 150px; /* Ancho mínimo para la columna más larga */
+    max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
+    text-align: center; /* Asegura que el texto de esta columna esté centrado */
+}
+
+/* Para la primera columna (Nº Armónico) y la columna de Proporción, que son más cortas, podemos hacerlas más compactas */
+.tabla-grande th:first-child,
+.tabla-grande td:first-child,
+.tabla-grande th:nth-child(2), /* Proporción */
+.tabla-grande td:nth-child(2) {
+    width: 80px; /* Ancho fijo para estas columnas */
+    text-align: center;
+}
+
+
+/* Asegurar que las otras columnas también tengan un padding adecuado y estén centradas */
+.tabla-grande th,
+.tabla-grande td {
+    text-align: center;
+}
+

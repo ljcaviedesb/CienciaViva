@@ -11,10 +11,8 @@
   <article>
     <h1>¿Por qué tu voz suena distinta a la de los demás?</h1>
     <p class="subtitle">Lo que oyes de ti mismo es una ilusión auditiva. Descubre qué hay detrás del timbre, las notas y tus armónicos.</p>
-    <div class="meta">🎤 Publicado por Laura Caviedes | Física y sonido | Lectura: 7–9 min
-    </div>
-
-    <h2>¿Qué es el timbre de la voz?</h2>
+    <div class="meta">🎤 Publicado por Laura Caviedes | Física y sonido | Lectura: 10–12 min
+    </div> <h2>¿Qué es el timbre de la voz?</h2>
     <p>
       El <strong>timbre</strong> es la "huella sonora" única de cada voz. Aunque dos personas canten la misma nota, suenan diferente por una combinación de factores como:
     </p>
@@ -37,7 +35,7 @@
       <li>Modelos de <strong>Inteligencia Artificial (IA)</strong> capaces de clonar y sintetizar voces con gran precisión.</li>
     </ul>
 
-    <h2>🎧 La ilusión auditiva: ¿Por qué mi voz suena rara en una grabación?</h2>
+    <h2>La ilusión auditiva: ¿Por qué mi voz suena rara en una grabación?</h2>
     <p>
       La razón por la que tu propia voz en una grabación te suena tan distinta (o a veces "rara") se debe a cómo la percibes cuando hablas en tiempo real, comparado a cómo la escuchan los demás. Esto es lo que llamamos la "ilusión auditiva":
     </p>
@@ -46,7 +44,7 @@
       <li><strong>Cuando te escuchan (o en una grabación):</strong> Los demás, y cualquier dispositivo de grabación, solo captan tu voz por <strong>conducción aérea</strong>. No perciben esa resonancia interna que tú sí. Por eso, al escuchar una grabación, te parece "extraña" o "distinta", porque estás experimentando tu voz casi exclusivamente por la vía aérea, tal como la escucha el resto del mundo, sin esa resonancia ósea a la que estás acostumbrado.</li>
     </ul>
 
-    <h2>🎼 Frecuencias de notas musicales y tu voz</h2>
+    <h2>Frecuencias de notas musicales y tu voz</h2>
     <p>
       En música, la altura de una nota se define por su <strong>frecuencia fundamental (F0)</strong>. En el sistema temperado, la nota <strong>La4 = 440 Hz</strong> es un estándar. La F0 de tu voz es la frecuencia principal a la que vibran tus cuerdas vocales, y es lo que determina la "nota" o la altura de tu habla o canto.
     </p>
@@ -68,63 +66,204 @@
       </table>
     </div>
 
-    <h2>Cómo se calculan las frecuencias</h2>
+    <h3>Cómo se calculan las frecuencias: el exponente $ \frac{n - 49}{12} $</h3>
     <p>
       Para cualquier nota en el sistema temperado, su frecuencia ($f$) se puede calcular a partir de una nota de referencia (como La4 = 440 Hz) con la siguiente fórmula:
       $f(n) = 440 \times 2^{((n - 49)/12)}$
     </p>
     <p>
-      Donde $n$ es el número de la nota, siendo <strong>La4 = 49</strong>. Por ejemplo, <strong>Do4 = 40</strong> (hay 9 semitonos entre A4 y C4), y da aproximadamente 261.63 Hz. La diferencia en el tamaño y la tensión de las cuerdas vocales es la razón principal de que hombres, mujeres y niños tengan rangos de voz diferentes (F0 promedio más baja en hombres, más alta en mujeres y niños).
+      Donde $n$ es el número de la nota, siendo <strong>La4 = 49</strong>. Por ejemplo, <strong>Do4 = 40</strong>, y da aproximadamente 261.63 Hz. La diferencia en el tamaño y la tensión de las cuerdas vocales es la razón principal de que hombres, mujeres y niños tengan rangos de voz diferentes (F0 promedio más baja en hombres, más alta en mujeres y niños).
     </p>
 
-    <h2>🎵 Tonalidades y octavas</h2>
-    <p>Subir o bajar una tonalidad significa mover toda la escala de notas hacia arriba o abajo, manteniendo las relaciones de intervalos. Por ejemplo:</p>
+    <p>
+      El exponente $\frac{n - 49}{12}$ se usa porque en una octava hay <strong>12 semitonos</strong> (C → C♯ → D → … → B → C). Cada semitono representa una <strong>razón constante de frecuencia</strong>: $r = 2^{1/12} \approx 1.05946$. Entonces, cada nota está a una distancia de $r$ veces la frecuencia de la nota anterior, creando una progresión geométrica.
+    </p>
+    <p>
+      Por ejemplo:
+      <ul>
+        <li>Si La4 = 440 Hz</li>
+        <li>Entonces La♯4 $= 440 \times 2^{1/12} \approx 466.16\ \text{Hz}$</li>
+        <li>Si4 $= 440 \times 2^{2/12} \approx 493.88\ \text{Hz}$</li>
+      </ul>
+      Y así sucesivamente.
+    </p>
+
+    <h3>¿Por qué se usa 440 Hz como referencia?</h3>
+    <p>
+      La afinación a 440 Hz para La4 no siempre fue un estándar. Durante siglos, las afinaciones variaban significativamente entre culturas y épocas, e incluso entre orquestas. El <strong>La4 = 440 Hz</strong> fue adoptado como estándar internacional en 1939 (y confirmado en 1955 por la ISO), con el objetivo de uniformar la afinación de instrumentos y producciones musicales y audiovisuales a nivel global.
+    </p>
+
+    <h2>🎵 La Arquitectura del Sonido: Octavas, Semitonos y Armónicos</h2>
+    <p>
+      Para entender por qué la música occidental se estructura con 12 notas por octava y cómo esto se relaciona con tu voz, necesitamos explorar la base física del sonido.
+    </p>
+
+    <h3>1. La base está en los armónicos naturales</h3>
+    <p>
+      Cuando haces sonar una cuerda de guitarra, un tubo de flauta o las cuerdas vocales, no vibra solo en una frecuencia fundamental. También vibra, de forma simultánea y más débil, en una serie de <strong>armónicos</strong> (o sobretonos), que son múltiplos enteros de esa frecuencia fundamental.
+    </p>
+    <p>
+      Por ejemplo, si la nota fundamental es Do (C), suenan también:
+    </p>
     <ul>
-      <li><strong>Do mayor → Re mayor</strong>: la escala completa sube un tono.</li>
-      <li><strong>Do mayor → Sib mayor</strong>: la escala completa baja un tono y medio.</li>
+      <li>Do una octava arriba ($2 \times$ la fundamental)</li>
+      <li>Sol ($3 \times$ la fundamental)</li>
+      <li>Do más agudo ($4 \times$ la fundamental)</li>
+      <li>Mi ($5 \times$ la fundamental)</li>
+      <li>Sol ($6 \times$ la fundamental)</li>
+      <li>Si♭ ($7 \times$ la fundamental, que es un poco "desfasado" del Si♭ que usamos en el piano)</li>
+      <li>Y así sucesivamente...</li>
     </ul>
-
-    <h2>🔹 Armónicos y su relación con las notas y el timbre</h2>
     <p>
-      Cuando tus cuerdas vocales vibran para producir una frecuencia fundamental (F0), también generan vibraciones adicionales en múltiplos exactos de esa frecuencia. Estas vibraciones son los <strong>armónicos</strong> (o sobretonos). Por ejemplo, si tu frecuencia fundamental es de 100 Hz, también se producirán armónicos a 200 Hz, 300 Hz, 400 Hz, y así sucesivamente.
+      Estos armónicos <strong>no están distribuidos de forma lineal</strong>, pero forman <strong>relaciones de frecuencia simples</strong> (como 2:1 para la octava, 3:2 para la quinta justa, 5:4 para la tercera mayor) que suenan particularmente consonantes y agradables al oído humano. De ahí nace la idea de que ciertas combinaciones de sonidos suenan "bien", como las octavas, quintas y terceras.
+    </p>
+
+    <h3>2. Doce notas: Dividiendo la octava en partes iguales (el temperamento igual)</h3>
+    <p>
+      La música occidental adoptó un sistema llamado <strong>temperamento igual</strong> que divide la octava (es decir, una frecuencia multiplicada por 2) en <strong>12 partes iguales en una escala logarítmica</strong>. Esto significa que la proporción de frecuencia entre cada semitono (el paso más pequeño entre notas adyacentes) es siempre la misma, $2^{1/12}$.
     </p>
     <p>
-      Cada instrumento o voz tiene una combinación única de armónicos y, crucialmente, una **intensidad relativa** distinta para cada uno de ellos. Es esta combinación la que define su timbre. La resonancia de tus cavidades vocales (garganta, boca, etc.) amplifica ciertos armónicos, creando "picos" de energía llamados <strong>formantes</strong>. Estos formantes son lo que le da a tu voz su color y carácter únicos, y son esenciales para distinguir, por ejemplo, las diferentes vocales.
+      Este sistema permite una enorme versatilidad:
     </p>
-    <blockquote>
-      Cada voz tiene un espectro armónico único. Eso es lo que define su timbre personal.
-    </blockquote>
+    <ul>
+      <li>Tocar en cualquier tonalidad manteniendo los mismos intervalos relativos entre las notas.</li>
+      <li>Afinar instrumentos como el piano o la guitarra, que no pueden cambiar su afinación entre piezas o canciones garantizando que suenen bien en cualquier clave.</li>
+      <li>Ofrece un compromiso óptimo entre la precisión matemática y la versatilidad práctica para la composición y ejecución musical.</li>
+    </ul>
+    <p>
+      <strong>Pero no es la única opción:</strong> Otras culturas musicales usan sistemas diferentes, como escalas de 5 notas (pentatónica), 7 notas (diatónica) o incluso 24 (cuartos de tono en música árabe).
+    </p>
 
-    <h2>🎶 Tabla de armónicos (ejemplo en Do)</h2>
-    <p>Aquí te mostramos cómo se relacionan los primeros armónicos con la nota fundamental Do:</p>
+    <h3>¿Por qué "subir" por octavas suena a la misma nota?</h3>
+    <p>
+      Una <strong>octava</strong> es cuando se duplica la frecuencia de una nota. Por ejemplo:
+    </p>
+    <ul>
+      <li>Do3 = 130.81 Hz</li>
+      <li>Do4 = 261.63 Hz (el doble de Do3)</li>
+      <li>Do5 = 523.25 Hz (el doble de Do4)</li>
+    </ul>
+    <p>
+      Aunque son frecuencias y, por tanto, "alturas" distintas, nuestro oído las percibe como la “misma nota” pero en un registro más agudo o grave. Esto se debe a cómo nuestro sistema auditivo procesa los armónicos: las notas separadas por una octava <strong>comparten muchos de sus armónicos</strong>, haciendo que el cerebro las <strong>agrupe como equivalentes</strong> en calidad tonal, pero con distinto “registro” o "altura". ¡Esta percepción es universal! Incluso los bebés y culturas que nunca han oído música occidental reconocen la equivalencia de octavas.
+    </p>
+
+    <h2>🎼Profundizando en los Armónicos: ¿Qué notas aparecen en tu voz?</h2>
+    <p>
+      Cuando cantas una nota, no solo produces su frecuencia fundamental. Tu voz genera una forma de onda compleja que se puede descomponer en la fundamental y una serie de armónicos. Estos armónicos son otras notas que suenan simultáneamente y contribuyen a la riqueza y el timbre de tu voz.
+    </p>
+    <p>
+      Veamos los <strong>primeros armónicos</strong> (hasta el número 16) para la fundamental Do (C). El patrón de intervalos que forman estos armónicos se repite para cualquier otra nota fundamental.
+    </p>
+
     <div class="tabla-scroll">
-      <table class="tabla-voces">
+      <table class="tabla-grande">
         <thead>
-          <tr><th># Armónico</th><th>Proporción con F0</th><th>Nota Resultante</th><th>Intervalo desde la Fundamental</th></tr>
+          <tr><th>Nº Armónico</th><th>Proporción</th><th>Frecuencia relativa</th><th>Nota aproximada</th><th>Intervalo desde la Fundamental</th></tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>1:1</td><td>Do</td><td>Fundamental</td></tr>
-          <tr><td>2</td><td>2:1</td><td>Do</td><td>Octava</td></tr>
-          <tr><td>3</td><td>3:1</td><td>Sol</td><td>Quinta Justa</td></tr>
-          <tr><td>4</td><td>4:1</td><td>Do</td><td>Doble Octava</td></tr>
-          <tr><td>5</td><td>5:1</td><td>Mi</td><td>Tercera Mayor</td></tr>
+          <tr><td>1</td><td>1:1</td><td>1.00×</td><td>Do (C)</td><td>Fundamental</td></tr>
+          <tr><td>2</td><td>2:1</td><td>2.00×</td><td>Do (C)</td><td>Octava</td></tr>
+          <tr><td>3</td><td>3:1</td><td>3.00×</td><td>Sol (G)</td><td>Quinta Justa</td></tr>
+          <tr><td>4</td><td>4:1</td><td>4.00×</td><td>Do (C)</td><td>Doble Octava</td></tr>
+          <tr><td>5</td><td>5:1</td><td>5.00×</td><td>Mi (E)</td><td>Tercera Mayor</td></tr>
+          <tr><td>6</td><td>6:1</td><td>6.00×</td><td>Sol (G)</td><td>Quinta Justa</td></tr>
+          <tr><td>7</td><td>7:1</td><td>7.00×</td><td>Si♭ (aprox.)</td><td>Séptima menor "natural"</td>
+          <tr><td>8</td><td>8:1</td><td>8.00×</td><td>Do (C)</td><td>Triple Octava</td>
+          <tr><td>9</td><td>9:1</td><td>9.00×</td><td>Re (D)</td><td>Segunda Mayor</td>
+          <tr><td>10</td><td>10:1</td><td>10.00×</td><td>Mi (E)</td><td>Tercera Mayor</td>
+          <tr><td>11</td><td>11:1</td><td>11.00×</td><td>Fa♯ (aprox.)</td><td>Tritono amplio</td>
+          <tr><td>12</td><td>12:1</td><td>12.00×</td><td>Sol (G)</td><td>Quinta Justa</td>
+          <tr><td>13</td><td>13:1</td><td>13.00×</td><td>La♭ (aprox.)</td><td>Sexta menor natural</td>
+          <tr><td>14</td><td>14:1</td><td>14.00×</td><td>Si♭ (aprox.)</td><td>Séptima menor</td>
+          <tr><td>15</td><td>15:1</td><td>15.00×</td><td>Si (B)</td><td>Séptima mayor</td>
+          <tr><td>16</td><td>16:1</td><td>16.00×</td><td>Do (C)</td><td>Cuádruple Octava</td>
         </tbody>
       </table>
     </div>
 
-    <h2>¿Por qué no los percibimos por separado?</h2>
     <p>
-      Aunque tu voz genera múltiples frecuencias (la fundamental y sus armónicos) a la vez, tu oído y cerebro los integran en una sola percepción sonora: la nota con su timbre característico. Es una increíble proeza de procesamiento auditivo. Un <strong>análisis espectral</strong>, sin embargo, puede mostrarte todas las frecuencias presentes en un sonido y sus respectivas intensidades, revelando la complejidad oculta de tu voz.
+      **Notas principales del acorde natural de Do:** Al observar los armónicos de Do, vemos que las notas que más destacan y que suenan "consonantes" son Do, Mi, Sol, Si♭, Re, Fa♯, La♭, Si. Es importante notar que algunos de estos armónicos superiores (como el Si♭ o el Fa♯ natural) no coinciden exactamente con las notas del sistema temperado, pero se aproximan lo suficiente como para ser percibidos así.
     </p>
-    <blockquote>
-      🎶 Cuando cantas "Mi", suenan muchos otros sonidos a la vez. Eso hace que tu voz sea única.
-    </blockquote>
+
+    <h3>¿Y para Re, Mi, Fa...? El mismo patrón armónico</h3>
+    <p>
+      El patrón de intervalos y las relaciones entre los armónicos son consistentes, solo que se trasladan. Por ejemplo, los primeros armónicos notables de **Re (D)** serían: Re, La, F♯, Do, Mi, Sol♯, Si♭, Do♯ (manteniendo el mismo patrón de intervalos que con Do, pero partiendo desde Re).
+    </p>
+
+    <div class="tabla-scroll">
+      <table class="tabla-voces">
+        <thead>
+          <tr><th>Nota base</th><th>Primeros armónicos notables (aproximados)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>C</td><td>C, G, E, B♭, D, F♯, A♭, B</td></tr>
+          <tr><td>D</td><td>D, A, F♯, C, E, G♯, B♭, C♯</td></tr>
+          <tr><td>E</td><td>E, B, G♯, D, F♯, A♯, C, D♯</td></tr>
+          <tr><td>F</td><td>F, C, A, E♭, G, B, C♯</td></tr>
+          <tr><td>G</td><td>G, D, B, F, A, C♯, D♯</td></tr>
+          <tr><td>A</td><td>A, E, C♯, G, B, D♯, F</td></tr>
+          <tr><td>B</td><td>B, F♯, D♯, A, C♯, E, G</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>🎵 ¿Por qué todo esto importa?</h3>
+    <ul>
+      <li>Estos armónicos naturales explican por qué ciertos acordes suenan “más puros” o consonantes: porque sus notas coinciden con los sobretonos reales que se producen naturalmente.</li>
+      <li>También revelan la base física de la mayoría de las escalas musicales occidentales, como la escala mayor, que surgen de las combinaciones más simples y consonantes derivadas de estos armónicos.</li>
+    </ul>
+
+    <h3>🎤 Cuando cantas "miiiiiii" y mantienes la nota...</h3>
+    <p>
+      Estás produciendo:
+    </p>
+    <ul>
+      <li>La nota Mi (E) como tu <strong>frecuencia fundamental</strong>.</li>
+      <li>Y también, de forma simultánea, todos sus <strong>armónicos naturales</strong>, aunque no los percibas conscientemente como notas separadas.</li>
+    </ul>
+
+    <h3>🎶 ¿Qué está sonando realmente en tu voz?</h3>
+    <p>
+      Supongamos que cantas Mi4 $\approx$ 329.63 Hz. Tu voz no genera solo una onda pura como la de un diapasón. Genera una forma de onda <strong>compleja</strong>, que se puede descomponer en:
+    </p>
+    <div class="tabla-scroll">
+      <table class="tabla-voces">
+        <thead>
+          <tr><th>Componente</th><th>Frecuencia aproximada</th><th>Qué es</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1° armónico</td><td>329.63 Hz</td><td><strong>Mi</strong> (la nota que cantas)</td></tr>
+          <tr><td>2° armónico</td><td>659.26 Hz</td><td><strong>Mi</strong> (1 octava arriba)</td></tr>
+          <tr><td>3° armónico</td><td>988.89 Hz</td><td><strong>Si</strong> (una quinta justa por arriba)</td></tr>
+          <tr><td>4° armónico</td><td>1318.52 Hz</td><td><strong>Mi</strong> (2 octavas arriba)</td></tr>
+          <tr><td>5° armónico</td><td>1648.15 Hz</td><td><strong>Sol♯</strong> (tercera mayor de Mi)</td></tr>
+          <tr><td>...</td><td>...</td><td>...</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      🎯 Entonces sí: estás cantando "Mi", <strong>pero suenan simultáneamente sus armónicos</strong>, que son otras notas y contribuyen a la riqueza de tu sonido.
+    </p>
+
+    <h3>¿Por qué no los escuchamos como notas separadas?</h3>
+    <p>
+      Porque nuestro oído y cerebro están diseñados para fusionar todos esos armónicos en una única percepción de "una nota con cierto timbre". Es una habilidad asombrosa de nuestro sistema auditivo. Pero si hicieras un **análisis espectral** (usando herramientas como un osciloscopio o software como Audacity), verías claramente que los armónicos están ahí, con sus frecuencias e intensidades.
+    </p>
+
+    <h3>Y aquí lo bonito:</h3>
+    <ul>
+      <li>La presencia y el volumen relativo de los armónicos es lo que define el <strong>timbre</strong> (por eso una voz suena distinta a un violín aunque canten el mismo Mi).</li>
+      <li>Los armónicos superiores suelen ser más débiles en intensidad, pero aún contribuyen significativamente a ese “color” único y la resonancia de tu voz.</li>
+    </ul>
 
     <h2>💡 En resumen: Tu voz, una orquesta personal</h2>
     <p>
       La increíble diversidad de voces humanas es el resultado de la compleja interacción entre la frecuencia fundamental que producen tus cuerdas vocales, el patrón único de armónicos (determinados por la forma y el tamaño de tu laringe) y cómo estas frecuencias son filtradas y amplificadas por tus cavidades resonantes (creando los formantes). Todo esto, junto a tu forma particular de articular, construye esa "huella sonora" que te hace inconfundible. Es como si cada uno de nosotros llevara una pequeña orquesta personal en la garganta.
     </p>
 
+    <div class="cta">
+      <p>Ahora que conoces la ciencia detrás de tu voz, ¿cómo crees que cambia tu percepción al escucharla o al intentar modificarla? ¡Comparte tus reflexiones en los comentarios!</p>
+    </div>
   </article>
 
 </body>
