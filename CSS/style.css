@@ -810,3 +810,9 @@ h1 {
 .tabla-bosones tr:nth-child(even) {
   background-color: #fafafa;
 }
+
+.tabla-voces {
+  text-align: center;
+  width: 60%;
+  margin: 0 20%;
+}
