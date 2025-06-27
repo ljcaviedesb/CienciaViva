@@ -22,12 +22,14 @@ function initSpectrometer() {
   }
 
   function startAnalyzer() {
+    console.log("Inicializando AudioContext...");
     audioContext = new (window.AudioContext || window.webkitAudioContext)();
     analyser = audioContext.createAnalyser();
     analyser.fftSize = 2048;
 
     navigator.mediaDevices.getUserMedia({ audio: true })
       .then(stream => {
+        console.log("Stream obtenido:", stream);
         microphone = audioContext.createMediaStreamSource(stream);
         microphone.connect(analyser);
 
