@@ -847,3 +847,19 @@ h1 {
     text-align: center;
 }
 
+#analyzer {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+#toggleButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#noteDisplay {
+  color: #333;
+}

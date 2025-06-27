@@ -104,4 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  fetch('Articles-blog/articulo2_sonido.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('blog-article-container').innerHTML = data;
+      initSpectrometer();
+    });
+
 });
