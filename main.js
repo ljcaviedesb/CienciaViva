@@ -102,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
               '<p>Error al cargar el artículo seleccionado.</p>';
           });
       }
+      //if (url === 'Articles-blog/articulo2_sonido.html' && typeof initSpectrometer === 'function') {
+      //  if (window.MathJax) {
+      //    MathJax.typesetPromise();
+      //  }
+      //  initSpectrometer();
+      //}
     });
   });
   fetch('Articles-blog/articulo2_sonido.html')
