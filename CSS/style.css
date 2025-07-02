@@ -813,7 +813,7 @@ h1 {
 
 .tabla-voces {
   text-align: center;
-  width: 60%;
+  width: 50%;
   margin: 0 20%;
 }
 
@@ -826,7 +826,7 @@ h1 {
 
 .tabla-grande th:last-child,
 .tabla-grande td:last-child {
-    min-width: 150px; /* Ancho mínimo para la columna más larga */
+    min-width: 200px; /* Ancho mínimo para la columna más larga */
     max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
     text-align: center; /* Asegura que el texto de esta columna esté centrado */
 }
@@ -836,7 +836,7 @@ h1 {
 .tabla-grande td:first-child,
 .tabla-grande th:nth-child(2), /* Proporción */
 .tabla-grande td:nth-child(2) {
-    width: 80px; /* Ancho fijo para estas columnas */
+    width: 50%; /* Ancho fijo para estas columnas */
     text-align: center;
 }
 
@@ -862,4 +862,9 @@ h1 {
 
 #noteDisplay {
   color: #333;
+}
+
+.resaltador_leve {
+  font-weight: 500;
+  color: var(--botones_secundarios);
 }
