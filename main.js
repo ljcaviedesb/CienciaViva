@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       //    MathJax.typesetPromise();
       //  }
       //  initSpectrometer();
-      //}
+      //} // solo quiero añadir este comentario como prueba
     });
   });
   fetch('Articles-blog/articulo2_sonido.html')
